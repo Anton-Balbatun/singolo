@@ -98,7 +98,8 @@ nav{
     position: absolute;
     top: 376px;
     left: 42px;
-    opacity: 0;   
+    opacity: 0; 
+    cursor: pointer;  
 }
 #Arrow_Black_Right{
     position: absolute;
@@ -106,6 +107,7 @@ nav{
     left: 964px;
     transform: rotate(180deg);
     opacity: 0; 
+    cursor: pointer;  
 }
 #Horizontal-Screen{
     position: absolute;
