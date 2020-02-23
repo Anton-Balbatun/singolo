@@ -24,6 +24,7 @@ header{
     text-decoration: none;
     color: #ffffff;
     text-transform: uppercase;
+    cursor: pointer;
 }
 nav{
     display: flex; 
