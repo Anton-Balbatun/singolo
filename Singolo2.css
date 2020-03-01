@@ -51,13 +51,18 @@ body{
     height: 20px;
     border-radius: 5px;
     background-color: #2d303a;
-    border: 1px solid #c5c5c5;
+    border: 1px solid #666d89;
     margin-right: 8px;
     padding-bottom: 20px;
+}
+.portfolio_nav .all{
+    color: #c5c5c5;
+    border: 1px solid #c5c5c5;
 }
 
 .portfolio_nav input:hover{
     background-color: #0f0f0f;
+    border: 1px solid #c5c5c5;
     cursor: pointer;
 }
 .portfolio_grid{
