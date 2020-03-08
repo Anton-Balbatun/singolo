@@ -60,11 +60,11 @@ nav{
 /* Slider */
 .slider{
     display: flex;
-    height: 584px;
+    height: 600px;
     background-color:  #f06c64 ;
     align-items: center;
     z-index: 1;
-    border-bottom: 16px solid #ea676b;
+    border-bottom: 15px solid #ea676b;
 }
 #horizontal{
     top: 269px;
