@@ -1,0 +1,176 @@
+body{
+    font-family: 'Lato';
+    margin: 0 auto;
+    padding: 0;
+    max-width:  1020px;
+    position: relative;
+}
+
+.get_quote{
+    height: 648px;
+    background-color: #f06c64;
+    width: 1020px;
+    border-bottom: 6px solid #ea676b;
+}
+.title_quote{
+    font-size: 30px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    padding: 67px 40px;
+    letter-spacing: 0.25px;
+}
+.article_quote{
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    margin:-65px 41px;
+    letter-spacing: -0.075px;
+}
+.information_icon_location{
+    margin-right: 13px ;
+}
+.information_icon_phone{
+    margin-right: 11px ;
+}
+.information_icon_mail{
+    margin-right: 10px ;
+}
+
+.form_wrapper{
+    display: flex;
+    margin-top: 112px;
+}
+
+.contact_information_block{
+   padding: 0px;
+   margin-right: 40px;
+}
+
+.contact_information_block h2{
+    margin: 0px;
+    font-size: 18px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    letter-spacing: 0.25px;
+}
+
+.contact_information_block p,a{
+    width: 300px;
+    height: 175px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+}
+
+.contact_information_block a{
+    padding-top: 20px;
+    padding-left: 3px;
+    margin-left: 0px;
+    margin-bottom: -196px; 
+    display: block;
+    text-decoration: none;
+    
+}
+#mail{
+    padding-left: 0px;
+}
+#phone{
+    padding-left: 1px;
+    
+}
+
+.login_form input{
+    width: 619px;
+    height: 38px;
+    border-radius: 5px;
+    background-color: #d6564f;
+    border: none;
+    margin-left: 40px;
+    margin-bottom: 16px;
+    padding-left: 15px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+}
+.login_form input::placeholder{
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+}
+
+.login_form .message{
+    height: 202px;
+    padding-bottom: 165px;
+    box-sizing: border-box;
+}
+
+.login_form #submit_button{
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    margin-top: 220px;
+    margin-left: 70px;
+    background-color: #671D5F;
+    border: none;
+    color: white;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+}
+.footer{
+    width: 1020px;
+    height: 76px;
+    background-color: #2d303a;
+}
+.footer p{
+    padding-top: 30px;
+    padding-left: 42px;
+    margin: 0;
+    font-size: 12px;
+    color: #5E657E;
+    letter-spacing: -0.1px;
+}
+
+.links_footer{
+    display: flex; 
+    width: 371px; 
+    margin-left: 820px;
+    margin-top: -23px;
+}
+
+.links_footer .icon{
+    padding-left: 8px;
+}
+
+.icon{
+    opacity: 0.58;
+    cursor: pointer;
+}
+.icon:hover{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
