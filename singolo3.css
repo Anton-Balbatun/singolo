@@ -5,7 +5,6 @@ body{
     max-width:  1020px;
     position: relative;
 }
-
 .get_quote{
     height: 648px;
     background-color: #f06c64;
@@ -64,7 +63,6 @@ body{
     text-align: left;
     letter-spacing: 0.25px;
 }
-
 .contact_information_block p,a{
     width: 300px;
     height: 175px;
@@ -75,7 +73,6 @@ body{
     font-weight: 400;
     text-align: left;
 }
-
 .contact_information_block a{
     padding-top: 20px;
     padding-left: 3px;
@@ -92,7 +89,6 @@ body{
     padding-left: 1px;
     
 }
-
 .login_form input{
     width: 619px;
     height: 38px;
@@ -119,7 +115,6 @@ body{
     padding-bottom: 165px;
     box-sizing: border-box;
 }
-
 .login_form #submit_button{
     width: 150px;
     height: 30px;
