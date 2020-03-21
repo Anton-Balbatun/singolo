@@ -6,40 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./assets/reset200802.css">
     <link rel="stylesheet" href="style.css">
+    
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <title>Singolo</title>
 </head>
 <body>
+        <div id="home"></div>
         <header>
             <div class="SINGOLO">
-                <h1><a class="singolo-logo">SINGOLO</a></h1>
+                <h1><a href="#home" class="singolo-logo">SINGOLO</a></h1>
             </div>
-            <nav class='navigation'>
-                    <a href="" ><font color='#F06C64'>HOME</font></a>
+            <nav class='navigation' >
+                    <a href="#home" >HOME</a>
                     <h2 class='dot'>·</h2>
-                    <a href="">SERVICES</a>
+                    <a href="#services">SERVICES</a>
                     <h2 class='dot'>·</h2>
-                    <a href="">PORTFOLIO</a>
+                    <a href="#portfolio">PORTFOLIO</a>
                     <h2 class='dot'>·</h2>
-                    <a href="">ABOUT</a>
+                    <a href="#about_us">ABOUT</a>
                     <h2 class='dot'>·</h2>
-                    <a href="">CONTACT</a>
+                    <a href="#get_quote">CONTACT</a>
             </nav>
         </header>
         <main>
-            <section class="slider">
-                <img src="./assets/Arrow.png" alt="" id='Arrow-left'> 
+            <div class="slide">
+                <img src="./assets/slide2.png" alt="Slide 2">
+                <img src="./assets/Arrow.png" alt="" id='Arrow-left' class="prev_button">
+                <img src="./assets/Arrow.png" alt="" id='Arrow-right'  class="next_button"> 
+            </div>          
+            <section class="slider" id="slider">
+                <img src="./assets/Arrow.png" alt="" id='Arrow-left' class="prev_button">
+                <img src="./assets/Arrow.png" alt="" id='Arrow-right'  class="next_button"> 
                 <img src="./assets/Base.png" alt="" id="vertical">
                 <img src="./assets/Vertical-Screen.png" alt="" id="Vertical-Screen"> 
                 <img src="./assets/Base.png" alt="" id="horizontal">
                 <img src="./assets/Horizontal-Screen.png" alt="" id='Horizontal-Screen'>
-                <img src="./assets/Arrow.png" alt="" id='Arrow-right'>
                 <img src="./assets/Shadow.png" alt="" id='Shadow-Vertical'>
                 <img src="./assets/Shadow.png" alt="" id='Shadow-horizontal'>
-                <img src="./assets/Arrow_black.png" alt="" id="Arrow_Black_Left">
-                <img src="./assets/Arrow_black.png" alt="" id="Arrow_Black_Right">
+                <img src="./assets/Arrow_black.png" alt="" id="Arrow_Black_Left" >
+                <img src="./assets/Arrow_black.png" alt="" id="Arrow_Black_Right" >
             </section>   
-            <section class="services">
+            <section class="services" id="services">
                 <div class="container">
                     <h2 class="title_our_services">Our Services</h2>
                     <article class="service_article">
@@ -85,7 +92,7 @@
                 </div>
             </section>
 
-            <section class="portfolio">
+            <section class="portfolio" id="portfolio">
                 <h2>Portfolio</h2>
                 <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
                 <div class="portfolio_nav">
@@ -109,7 +116,7 @@
                     <img src="./assets/Image Singolo2/12.png" alt="">
                 </div>
             </section> 
-            <section class="about_us">
+            <section class="about_us" id="about_us">
                 <h2>About Us</h2>
                 <p class="about_us_article">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="people">
@@ -149,7 +156,7 @@
                 </div>
             </section>
 
-            <section class="get_quote">
+            <section class="get_quote" id="get_quote">
                 <h2 class="title_quote">Get a Quote</h2>
                 <p class="article_quote">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class='form_wrapper'>
@@ -185,5 +192,6 @@
             </section>
             
         </footer>
+        <script src="script.js" ></script>
 </body>
 </html>
