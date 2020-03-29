@@ -11,21 +11,21 @@
     <title>Singolo</title>
 </head>
 <body>
-        <div id="home"></div>
+        <div class="block" id="home"></div>
         <header>
             <div class="SINGOLO">
                 <h1><a href="#home" class="singolo-logo">SINGOLO</a></h1>
             </div>
-            <nav class='navigation' >
-                    <a href="#home" >HOME</a>
+            <nav class='navigation ' >
+                    <a href="#home" class='nav__link'>HOME</a>
                     <h2 class='dot'>·</h2>
-                    <a href="#services">SERVICES</a>
+                    <a href="#services" class='nav__link'>SERVICES</a>
                     <h2 class='dot'>·</h2>
-                    <a href="#portfolio">PORTFOLIO</a>
+                    <a href="#portfolio" class='nav__link'>PORTFOLIO</a>
                     <h2 class='dot'>·</h2>
-                    <a href="#about_us">ABOUT</a>
+                    <a href="#about_us" class='nav__link'>ABOUT</a>
                     <h2 class='dot'>·</h2>
-                    <a href="#get_quote">CONTACT</a>
+                    <a href="#get_quote" class='nav__link'>CONTACT</a>
             </nav>
         </header>
         <main>
@@ -46,7 +46,7 @@
                 <img src="./assets/Arrow_black.png" alt="" id="Arrow_Black_Left" >
                 <img src="./assets/Arrow_black.png" alt="" id="Arrow_Black_Right" >
             </section>   
-            <section class="services" id="services">
+            <section class="services block" id="services">
                 <div class="container">
                     <h2 class="title_our_services">Our Services</h2>
                     <article class="service_article">
@@ -92,7 +92,7 @@
                 </div>
             </section>
 
-            <section class="portfolio" id="portfolio">
+            <section class="portfolio block" id="portfolio">
                 <h2>Portfolio</h2>
                 <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
                 <div class="portfolio_nav">
@@ -116,7 +116,7 @@
                     <img src="./assets/Image Singolo2/12.png" alt="">
                 </div>
             </section> 
-            <section class="about_us" id="about_us">
+            <section class="about_us block" id="about_us">
                 <h2>About Us</h2>
                 <p class="about_us_article">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="people">
@@ -156,7 +156,7 @@
                 </div>
             </section>
 
-            <section class="get_quote" id="get_quote">
+            <section class="get_quote block" id="get_quote">
                 <h2 class="title_quote">Get a Quote</h2>
                 <p class="article_quote">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class='form_wrapper'>
@@ -165,7 +165,7 @@
                         <input type="email" class="email" placeholder="Email (Required)" required>
                         <input type="text" class="subject" placeholder="Subject">
                         <input type="text" class="message" placeholder="Describe your project in detail...">
-                        <input type="submit" id="submit_button" value="Register">
+                        <input type="submit" id="submit_button" value="Register" >
                     </form>
                     <div class="contact_information_block">
                         <h2>Contact Information</h2>
@@ -177,6 +177,15 @@
                             <a href="" id="mail" type="mail"><img src="./assets/Image Singolo2/mail.png" alt="" class="information_icon_mail">info@singolo.com</a><br>
                         </p>
                     </div>
+                </div>
+                <div class="modal">
+                    <div class="modal_content">
+                        <p>The letter was sent</p>
+                        <p id= 'sub'>Subject: No subject</p>
+                        <p id="desc">Description: No Description</p>
+                        <input type="button" value="Close" class="close_button">
+                    </div>
+                    
                 </div>
             </section>
         </main>

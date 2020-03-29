@@ -1,3 +1,24 @@
+document.addEventListener('scroll', onScroll);
+
+function onScroll() {
+    const curPos = window.scrollY;
+    const divs = document.querySelectorAll('.block');
+    const links = document.querySelectorAll('.nav__link');
+    divs.forEach((element) => {
+        if (element.offsetTop-400 <= curPos) { 
+            links.forEach((index) => {
+                index.classList.remove('active');
+
+                if (element.getAttribute('id') === index.getAttribute('href').substring(1)) {
+                    index.classList.add('active');
+                }
+                
+            })
+        }
+    });
+}
+
+
 let navigation_links = document.querySelector('.navigation')
 navigation_links.addEventListener('click', select_navigation_links)
 
@@ -41,9 +62,43 @@ function turn_on_horizontal() {
         document.querySelector('#Horizontal-Screen').style.display = 'none'
      }
 }
-document.querySelector('.portfolio_nav').addEventListener('click',shuffle_cards)
+document.querySelectorAll('.portfolio_nav input').forEach(index =>{index.addEventListener('click',shuffle_cards)})
 
 function shuffle_cards() {
-    document.querySelector('.portfolio_nav').querySelectorAll('input').forEach(index =>{ index.id = ''})
+    document.querySelectorAll('.portfolio_nav input').forEach(index =>{ index.id = ''})
     event.target.id = 'portfolio_white'
+    let img = [...document.querySelectorAll('.portfolio_grid img')]
+    img.sort(()=>Math.random() - 0.5).forEach(index => document.querySelector('.portfolio_grid').appendChild(index))
 }
+
+document.querySelectorAll('.portfolio_grid img').forEach(index =>{index.addEventListener('click',border_cards)})
+
+function border_cards(){
+    document.querySelectorAll('.portfolio_grid img').forEach(index =>{ index.className = ''})
+    event.target.classList = 'img_border'
+}
+
+document.querySelector('#submit_button').addEventListener('click',show_modal)
+
+function show_modal(){
+    if (document.querySelector('.name').validity.valid && document.querySelector('.email').validity.valid) {
+    event.preventDefault();
+
+    subject = document.querySelector('.subject').value;
+    message = document.querySelector('.message').value;
+    document.querySelector('#sub').innerHTML= `Subject: ${subject}`;
+    document.querySelector('#desc').innerHTML= `Description: ${message}`;
+    document.querySelector('.modal').style.display = 'block';
+    }
+}
+
+document.querySelector('.modal').addEventListener('click',close_modal)
+document.querySelector('.close_button').addEventListener('click',close_modal)
+
+function close_modal(){
+    if(event.target == document.querySelector('.modal') || event.target ==document.querySelector('.close_button') ){
+    document.querySelector('.modal').style.display = 'none';
+    }
+}
+
+

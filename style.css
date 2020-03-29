@@ -35,9 +35,10 @@ header{
     text-decoration: none;
     color: #ffffff;
 }
-.navigation .active{
-    color: #f06c64;
+.active {
+    color: #f06c64  !important;
 }
+
 .singolo-logo::after{
     content:"*";
     color: red;
@@ -310,6 +311,13 @@ nav{
     overflow: hidden;
 }
 
+.img_border{
+    border: 5px #F06C64 solid;
+    box-sizing: border-box;
+    width: 220px;
+    height: 187px;
+}
+
 .about_us{
     height: 730px;
     background-color: #f2f2f2;
@@ -522,6 +530,32 @@ nav{
     font-weight: 400;
     text-align: center;
     cursor: pointer;
+}
+
+.modal{
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    z-index: 12;
+}
+.close_button{
+    margin-top: 15px;
+    margin-left:  20px;
+}
+
+.modal_content{
+    background: #f06c64;
+    margin:15% auto;
+    color: white;
+    border: 1px black solid;
+    width: 10%;
+    padding: 30px 40px;
+    border-radius: 5px;
+  
 }
 .footer{
     width: 1020px;
